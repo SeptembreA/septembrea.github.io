@@ -1,0 +1,336 @@
+/* Border Box */
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Reset (normalize.css or similar) */
+/* Your reset styles go here */
+
+/* Global Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+:root {
+  /* Colour Variables */
+  --blue: #276ABF;
+  --baby-blue: #e4f4fc;
+  --yellow: #FCBF1B;
+  --green: #065A29;
+  --pink: #FF9EA5;
+  --orange: #F54907;
+  --black: #252525;
+  --white: #fffff0;
+}
+
+/* Helper Classes */
+.bold {
+  font-weight: 900;
+  height: 100vh;
+  width: 100%
+}
+
+/* Show elements only on mobile */
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Show elements only on desktop */
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: inline;
+  }
+}
+
+/* Fonts */
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zilla-slab-regular {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zilla-slab-medium {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.zilla-slab-semibold {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.zilla-slab-bold {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zilla-slab-light-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zilla-slab-regular-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.zilla-slab-medium-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.zilla-slab-semibold-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.zilla-slab-bold-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: var(--baby-blue);
+  color: var(--black);
+}
+
+/* Loader */
+#loader {
+  display: none;
+}
+
+.loader {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--baby-blue);
+  height: 100vh;
+  width: 100%;
+}
+
+.loader i {
+  font-size: 100px;
+  color: var(--blue);
+  animation: color-cycle 5s infinite;
+}
+
+@keyframes color-cycle {
+  0% { color: var(--blue); }
+  20% { color: var(--yellow); }
+  40% { color: var(--green); }
+  60% { color: var(--pink); }
+  80% { color: var(--orange); }
+  100% { color: var(--blue); }
+}
+
+#titlePage {
+  display: none;
+}
+
+.title-page {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-page {
+    font-size: 40px;
+  }
+}
+
+.title-page h1 .green {
+  color: var(--green);
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-page h1 .green {
+    font-size: 75px;
+  }
+}
+
+.title-page h1 .bold {
+  font-size: 75px;
+}
+@media only screen and (min-width: 768px) {
+  .title-page h1 .bold {
+    font-size: 55px;
+  }
+}
+
+#main {
+  display: none;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  border: 4px solid var(--green);
+  width: fit-content;
+  margin: 20px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+header h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-info {
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 6px;
+  height: 100vh;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .weather-info {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .weather-info {
+    margin-top: 0;
+  }
+}
+
+#errorMessage {
+  display: none;
+}
+
+.weather-info .fa-poop {
+  font-size: 30px;
+  color: #7B3F00;
+}
+
+.weather-info i {
+  font-size: 50px;
+  color: var(--yellow);
+}
+
+.weather-info h2 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .weather-info h2 {
+    font-size: 45px;
+    line-height: 40.25px;
+    margin-bottom: 0;
+  }
+}
+
+
+.weather-info .current-temperature {
+  font-size: 90px;
+  font-weight: 300;
+  color: var(--blue);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .weather-info .current-temperature {
+    font-size: 140px;
+  }
+}
+
+.weather-info .user-location {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .weather-info .user-location {
+    font-size: 40px;
+  }
+}
+
+.weather-info .weather-condition,
+.weather-info .precipitation,
+.weather-info .wind,
+.weather-info .clouds {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
