@@ -23,12 +23,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="loader" id="loader">
+  <div class="preloader" id="preloader">
     <i class="fas fa-solid fa-cloud-sun"></i>
   </div>
-  <section class="title-page" id="titlePage">
-    <h1 class="zilla-slab-regular"><span class="green">Grass Riots</span><br><span class="bold">Local Weather App</span></h1>
-  </section>
   <main id="main">
     <header>
       <h1 class="zilla-slab-semibold">Grass Riots Local Weather App</h1>
@@ -36,10 +33,11 @@
     <section class="weather-info">
       <i class="fas fa-solid fa-cloud-sun"></i>
       <h2>Your Current<span class="desktop-only"> </span><br class="mobile-only">Local Weather</h2>
-      <h4 class="error-message" id="errorMessage">Sorry <i class="fas fa-solid fa-poop"></i><br>We're unable to load your current weather forecast.</h4>
+      <h3 class="location" id="location"></h3>
+      <h4 class="location-error" id="locationError"></h4>
       <h4 class="current-temperature" id="currentTemperature"></h4>
-      <h3 class="user-location" id="userLocation"></h3>
       <h4 class="weather-condition" id="currentWeather"></h4>
+      <h4 class="weather-error" id="weatherError"></h4>
       <h4 class="precipitation" id="currentPrecipitation"></h4>
       <h4 class="wind" id="currentWind"></h4>
       <h4 class="clouds" id="currentCloud"></h4>
